@@ -24,8 +24,8 @@ export function InfoCards({
     }
   };
 
-  const websiteUrl = links.website || links.instagram;
-  const websiteLabel = links.website ? "Website" : "Instagram";
+  const websiteUrl = links.instagram;
+  const websiteLabel =  "Instagram";
   const whatsappLink = buildWhatsAppLink(contact.whatsapp);
   const contactItems = [];
 
@@ -40,6 +40,21 @@ export function InfoCards({
     });
   }
 
+  if (websiteUrl) {
+    contactItems.push({
+      key: "website",
+      element: (
+        <a
+          className="inline-flex items-center gap-2 hover:opacity-80"
+          href={websiteUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Globe size={16} /> {websiteLabel}
+        </a>
+      ),
+    });
+  }
 
   if (whatsappLink) {
     contactItems.push({

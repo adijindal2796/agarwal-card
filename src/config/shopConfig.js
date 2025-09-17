@@ -5,13 +5,13 @@ import pathaniImage from "../assets/highlights/pathani.webp";
 
 export const shopConfig = {
   brand: "Agarwal Kurta Payjama",
-  owner: "Agarwal Kurta Payjama",
+  owner: "Aditya Jindal",
   description: "Men's ethnic wear • Ajmer",
   contact: {
     phoneDisplay: "+91 98283 94600",
     phone: "+919828394600",
     whatsapp: "919828394600",
-    email: "",
+    email: "agarwalkurta@gmail.com",
   },
   links: {
     map: "https://maps.app.goo.gl/eNPcbAJUExZCG5hi8",
