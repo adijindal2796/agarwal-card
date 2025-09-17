@@ -71,9 +71,14 @@ export default function App() {
         phoneDisplay={shopConfig.contact.phoneDisplay}
         mapLink={shopConfig.links.map}
         onSaveContact={handleSaveContact}
+        reviewLink={shopConfig.links.review}
       />
 
-      <HighlightsSection catalog={shopConfig.catalog} instagram={shopConfig.links.instagram} />
+      <HighlightsSection
+        catalog={shopConfig.catalog}
+        instagram={shopConfig.links.instagram}
+        whatsapp={shopConfig.contact.whatsapp}
+      />
 
       <InfoCards
         hours={shopConfig.hours}
@@ -83,7 +88,11 @@ export default function App() {
         links={shopConfig.links}
       />
 
-      <AppFooter brand={shopConfig.brand} />
+      <AppFooter
+        brand={shopConfig.brand}
+        instagram={shopConfig.links.instagram}
+        whatsapp={shopConfig.contact.whatsapp}
+      />
 
       <StickyBar
         whatsapp={shopConfig.contact.whatsapp}

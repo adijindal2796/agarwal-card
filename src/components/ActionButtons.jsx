@@ -1,4 +1,4 @@
-import { Download, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Download, MapPin, MessageCircle, Phone, Star } from "lucide-react";
 import { buildWhatsAppLink } from "../utils/shopUtils";
 
 export function ActionButtons({
@@ -8,6 +8,7 @@ export function ActionButtons({
   phoneDisplay,
   mapLink,
   onSaveContact,
+  reviewLink,
 }) {
   const whatsappLink = buildWhatsAppLink(whatsapp, whatsappMessage);
 
@@ -34,7 +35,7 @@ export function ActionButtons({
 
   return (
     <section className="mx-auto mt-1 max-w-xl px-5">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
         {whatsappCard}
 
         <a href={`tel:${phone}`} className="group rounded-2xl bg-white p-4 shadow hover:shadow-md">
@@ -62,6 +63,20 @@ export function ActionButtons({
           </div>
           <p className="mt-2 text-center text-sm font-semibold">Save Contact</p>
         </button>
+
+        {reviewLink && (
+          <a
+            href={reviewLink}
+            target="_blank"
+            rel="noreferrer"
+            className="group rounded-2xl bg-white p-4 shadow hover:shadow-md"
+          >
+            <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 transition group-hover:scale-105">
+              <Star />
+            </div>
+            <p className="mt-2 text-center text-sm font-semibold">Review Us</p>
+          </a>
+        )}
       </div>
     </section>
   );
