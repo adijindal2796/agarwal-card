@@ -29,8 +29,8 @@ export const shopConfig = {
     countryCode: "IN",
   },
   hours: [
-    { days: "Mon–Sat", time: "11:00 AM – 9:00 PM" },
-    { days: "Sunday", time: "11:00 AM – 7:00 PM" },
+    { days: "Mon–Sat ->", time: "   9:30 AM – 10:30 PM" },
+    { days: "Sunday->", time: "11:00 AM – 7:00 PM" },
   ],
   catalog: [
     {

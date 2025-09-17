@@ -40,21 +40,6 @@ export function InfoCards({
     });
   }
 
-  if (websiteUrl) {
-    contactItems.push({
-      key: "website",
-      element: (
-        <a
-          className="inline-flex items-center gap-2 hover:opacity-80"
-          href={websiteUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Globe size={16} /> {websiteLabel}
-        </a>
-      ),
-    });
-  }
 
   if (whatsappLink) {
     contactItems.push({
