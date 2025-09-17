@@ -1,12 +1,9 @@
-import { Instagram, MessageCircle, ShoppingBag } from "lucide-react";
-import { buildWhatsAppLink } from "../utils/shopUtils";
+import { ShoppingBag } from "lucide-react";
 
-export function HighlightsSection({ catalog, instagram, whatsapp }) {
+export function HighlightsSection({ catalog }) {
   if (!catalog?.length) {
     return null;
   }
-
-  const whatsappLink = buildWhatsAppLink(whatsapp);
 
   return (
     <section className="mx-auto mt-8 max-w-xl px-5">
@@ -46,34 +43,6 @@ export function HighlightsSection({ catalog, instagram, whatsapp }) {
           </a>
         ))}
       </div>
-      {(instagram || whatsappLink) && (
-        <div className="mt-5 flex flex-col items-center gap-2 text-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">Connect with us</p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {instagram && (
-              <a
-                href={instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1 hover:text-stone-900"
-              >
-                <Instagram size={16} /> Instagram
-              </a>
-            )}
-            {instagram && whatsappLink && <span className="text-stone-400">•</span>}
-            {whatsappLink && (
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1 hover:text-stone-900"
-              >
-                <MessageCircle size={16} /> WhatsApp
-              </a>
-            )}
-          </div>
-        </div>
-      )}
     </section>
   );
 }

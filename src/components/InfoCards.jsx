@@ -24,8 +24,8 @@ export function InfoCards({
     }
   };
 
-  const websiteUrl = links.website || links.instagram;
-  const websiteLabel = links.website ? "Website" : "Instagram";
+  const websiteUrl = links.instagram;
+  const websiteLabel =  "Instagram";
   const whatsappLink = buildWhatsAppLink(contact.whatsapp);
   const contactItems = [];
 

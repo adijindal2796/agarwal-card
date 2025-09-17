@@ -6,6 +6,7 @@ import { InfoCards } from "./components/InfoCards";
 import { ShopHeader } from "./components/ShopHeader";
 import { StickyBar } from "./components/StickyBar";
 import { shopConfig } from "./config/shopConfig";
+import brandIcon from "./assets/brand/brand-icon.png";
 import {
   buildJsonLd,
   createMotifBackground,
@@ -62,6 +63,7 @@ export default function App() {
         initials={initials}
         backgroundImage={backgroundImage}
         onShare={handleShare}
+        logo={brandIcon}
       />
 
       <ActionButtons
@@ -69,16 +71,11 @@ export default function App() {
         whatsappMessage={shopConfig.messaging.whatsappCta}
         phone={shopConfig.contact.phone}
         phoneDisplay={shopConfig.contact.phoneDisplay}
-        mapLink={shopConfig.links.map}
         onSaveContact={handleSaveContact}
         reviewLink={shopConfig.links.review}
       />
 
-      <HighlightsSection
-        catalog={shopConfig.catalog}
-        instagram={shopConfig.links.instagram}
-        whatsapp={shopConfig.contact.whatsapp}
-      />
+      <HighlightsSection catalog={shopConfig.catalog} />
 
       <InfoCards
         hours={shopConfig.hours}
