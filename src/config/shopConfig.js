@@ -4,8 +4,8 @@ import nehruJacketImage from "../assets/highlights/nehru-jacket.avif";
 import pathaniImage from "../assets/highlights/pathani.webp";
 
 export const shopConfig = {
-  brand: "Agarwal & Company",
-  owner: "Agarwal & Company",
+  brand: "Agarwal Kurta Payjama",
+  owner: "Agarwal Kurta Payjama",
   description: "Men's ethnic wear • Ajmer",
   contact: {
     phoneDisplay: "+91 98283 94600",

@@ -71,16 +71,11 @@ export default function App() {
         whatsappMessage={shopConfig.messaging.whatsappCta}
         phone={shopConfig.contact.phone}
         phoneDisplay={shopConfig.contact.phoneDisplay}
-        mapLink={shopConfig.links.map}
         onSaveContact={handleSaveContact}
         reviewLink={shopConfig.links.review}
       />
 
-      <HighlightsSection
-        catalog={shopConfig.catalog}
-        instagram={shopConfig.links.instagram}
-        whatsapp={shopConfig.contact.whatsapp}
-      />
+      <HighlightsSection catalog={shopConfig.catalog} />
 
       <InfoCards
         hours={shopConfig.hours}
