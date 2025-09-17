@@ -28,7 +28,11 @@ export function ShopHeader({
             </div>
           )}
         </div>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-stone-900">{brand}</h1>
+        <h1 className="mt-4 text-3xl font-black tracking-tight">
+          <span className="bg-gradient-to-r from-amber-500 via-rose-500 to-amber-600 bg-clip-text text-transparent drop-shadow">
+            {brand}
+          </span>
+        </h1>
         <p className="mt-1 text-sm text-stone-600">{description}</p>
 
         <div className="mt-4 flex items-center justify-center gap-2 text-xs text-stone-700">

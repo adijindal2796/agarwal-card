@@ -4,14 +4,14 @@ import nehruJacketImage from "../assets/highlights/nehru-jacket.avif";
 import pathaniImage from "../assets/highlights/pathani.webp";
 
 export const shopConfig = {
-  brand: "Agarwal & Company",
-  owner: "Agarwal & Company",
+  brand: "Agarwal Kurta Payjama",
+  owner: "Aditya Jindal",
   description: "Men's ethnic wear • Ajmer",
   contact: {
     phoneDisplay: "+91 98283 94600",
     phone: "+919828394600",
     whatsapp: "919828394600",
-    email: "",
+    email: "agarwalkurta@gmail.com",
   },
   links: {
     map: "https://maps.app.goo.gl/eNPcbAJUExZCG5hi8",
@@ -29,8 +29,8 @@ export const shopConfig = {
     countryCode: "IN",
   },
   hours: [
-    { days: "Mon–Sat", time: "11:00 AM – 9:00 PM" },
-    { days: "Sunday", time: "11:00 AM – 7:00 PM" },
+    { days: "Mon–Sat ->", time: "   9:30 AM – 10:30 PM" },
+    { days: "Sunday->", time: "11:00 AM – 7:00 PM" },
   ],
   catalog: [
     {
