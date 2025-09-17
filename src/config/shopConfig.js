@@ -12,8 +12,8 @@ export const shopConfig = {
     map: "https://maps.app.goo.gl/eNPcbAJUExZCG5hi8",
     instagram:
       "https://www.instagram.com/agarwal_kurta_payjama?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    website: "",
-    review: "https://g.page/r/CWSLHKxEYhuKEBM/review",
+    website: "https://agarwalkurta.com",
+    review: "https://g.page/r/CWSLHKxEYhuKEBM/review"
   },
   location: {
     fullAddress: "Agarwal and Company, Nala Bazar Rd, Dargah Bazar, Ajmer, Rajasthan 305001",
