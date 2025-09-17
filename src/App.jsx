@@ -6,6 +6,7 @@ import { InfoCards } from "./components/InfoCards";
 import { ShopHeader } from "./components/ShopHeader";
 import { StickyBar } from "./components/StickyBar";
 import { shopConfig } from "./config/shopConfig";
+import brandIcon from "./assets/brand/brand-icon.png";
 import {
   buildJsonLd,
   createMotifBackground,
@@ -62,6 +63,7 @@ export default function App() {
         initials={initials}
         backgroundImage={backgroundImage}
         onShare={handleShare}
+        logo={brandIcon}
       />
 
       <ActionButtons
