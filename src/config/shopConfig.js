@@ -64,7 +64,7 @@ export const shopConfig = {
   ],
   messaging: {
     shareText: "Men's ethnic wear in Ajmer — tap to view contact & directions",
-    whatsappCta: "Hi! Saw your QR card — looking for men's ethnic wear.",
-    whatsappSticky: "Hi! Need details about your men's collection.",
+    whatsappCta: "Hi there! I'm looking for men's ethnic wear for this festival.",
+    whatsappSticky: "Hi! I need details about your men's collection.",
   },
 };
