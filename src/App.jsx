@@ -6,7 +6,7 @@ import { InfoCards } from "./components/InfoCards";
 import { ShopHeader } from "./components/ShopHeader";
 import { StickyBar } from "./components/StickyBar";
 import { shopConfig } from "./config/shopConfig";
-import brandIcon from "./assets/brand/brand-icon.png";
+import brandIcon from "./assets/brand/brand-icon.svg";
 import {
   buildJsonLd,
   createMotifBackground,

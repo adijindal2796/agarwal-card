@@ -13,17 +13,20 @@ export function ShopHeader({
   return (
     <div className="relative isolate">
       <div className="absolute inset-0 opacity-70" style={{ backgroundImage }} />
-      <header className="relative mx-auto max-w-xl px-5 pt-10 pb-6 text-center">
-        <div className="mx-auto h-24 w-24 overflow-hidden rounded-2xl bg-white shadow-lg">
+      <header className="relative mx-auto max-w-2xl px-5 pt-24 pb-10 text-center">
+        <div className="absolute left-1/2 top-0 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[36px] border-4 border-white/80 bg-white/95 shadow-2xl">
           {logo ? (
             <img
               src={logo}
               alt={`${brand} logo`}
-              className="h-full w-full object-cover"
-              loading="lazy"
+              className="h-24 w-24 object-contain"
+              loading="eager"
+              fetchPriority="high"
+              width={96}
+              height={96}
             />
           ) : (
-            <div className="grid h-full w-full place-items-center bg-gradient-to-br from-amber-500 to-rose-600">
+            <div className="grid h-24 w-24 place-items-center rounded-[28px] bg-gradient-to-br from-amber-500 to-rose-600">
               <span className="text-3xl font-black tracking-widest text-white drop-shadow">{initials}</span>
             </div>
           )}
@@ -50,7 +53,7 @@ export function ShopHeader({
         <button
           type="button"
           onClick={onShare}
-          className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1.5 text-xs shadow hover:bg-white"
+          className="absolute right-6 top-6 inline-flex items-center gap-2 rounded-full bg-white/85 px-3 py-1.5 text-xs shadow hover:bg-white"
         >
           <Share2 size={14} /> Share
         </button>
